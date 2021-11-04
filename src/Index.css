@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Semi Condensed', sans-serif;
+
+}
+.bmi{
+    padding: 10px;
+    background-color: #D9D9D9;
+    margin: 5px;
+    /* max-width: 900px; */
+}
+.bmi input,.bmi select{
+    border: 0px;
+    padding: 5px;
+}
+.bmi input:focus,.bmi select:focus{
+    outline: none;
+}
+.bmi td{
+    padding: 8px;
+}
+.heading{
+    margin: 10px;
+    color: #605B59;
+}
+#root{
+    padding: 15px;
+}
+button{
+    cursor: pointer;
+    /* padding: 5px; */
+}
+.bmi-table{
+    display: flex;
+}
+.bmi-table div{
+    margin: 5px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    flex: 1 1 calc(25% - 5px);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.yellow{
+    background-color: #FEB132;
+}
+.green{
+    background-color: #30A232;
+}
+.orange{
+    background-color: #E96024;
+}
+.red{
+    background-color: #C0101B;
+}
+.bmi-answer{
+    display: flex;
+}
+.your-bmi{
+    flex: 1 1 calc(25% - 5px);
+    margin: 5px;
+    background-color: #D9D9D9;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.actual-bmi{
+    margin: 5px;
+    flex: 1 1 calc(75% - 5px);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.converters{
+    display: flex;
+    margin-top: 30px;
+}
+.converters div{
+    flex: 1 1 calc(50% - 9px);
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.converters td{
+    padding: 5px;
+}
+input{
+    padding: 5px;
+}
+@media screen and (max-width:585px) {
+    .converters{
+        flex-direction: column;
+    }
+    .bmi-table{
+        flex-direction: column;
+    }
+}
